@@ -1,0 +1,4 @@
+export enum OtpType {
+  REGISTER = 'REGISTER',
+  RESET_PASSWORD = 'RESET_PASSWORD',
+}
