@@ -11,6 +11,8 @@ import { StudentsModule } from './students/students.module';
 import { FacultyModule } from './faculty/faculty.module';
 import { DepartmentsModule } from './departments/departments.module';
 import { CoursesModule } from './courses/courses.module';
+import { AdminModule } from './admin/admin.module';
+
 
 @Module({
   imports: [ ConfigModule.forRoot(
@@ -26,7 +28,7 @@ import { CoursesModule } from './courses/courses.module';
     database: process.env.DB_NAME,
     autoLoadEntities: true,
     synchronize: true,
-  }), AuthModule, UsersModule, OtpModule, StudentsModule, FacultyModule, DepartmentsModule, CoursesModule,
+  }), AuthModule, UsersModule, OtpModule, StudentsModule, FacultyModule, DepartmentsModule, CoursesModule, AdminModule,
 ],
   controllers: [AppController],
   providers: [AppService],
